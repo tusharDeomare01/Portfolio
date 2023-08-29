@@ -1,0 +1,136 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body, .wrapper, .content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body{
+  padding: 0 10px;
+  min-height: 100vh;
+  background-color: black;
+  background-image: linear-gradient(0deg, white 0%,black 70%);
+
+}
+.wrapper{
+  width: 440px;
+  padding: 30px 30px 38px;
+  background: #fff;
+  border-radius: 10px;
+  flex-direction: column;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+/* .wrapper img{
+  max-width: 103px;
+} */
+.wrapper h1{
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0;
+}
+.wrapper .content{
+  width: 100%;
+  justify-content: space-between;
+}
+.content.disable{
+  cursor: no-drop;
+}
+.content .column{
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #bfbfbf;
+  width: calc(100% / 3 - 5px);
+}
+.content.disable .column{
+  opacity: 0.6;
+  pointer-events: none;
+}
+.column select{
+  width: 100%;
+  height: 53px;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 19px;
+}
+.wrapper button{
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 17px 0;
+  margin-top: 20px;
+  border-radius: 5px;
+  background: black;
+  transition: 0.5s ease;
+}
+button:hover{
+  opacity: 0.9;
+}
+
+
+
+/* ---------------------------------------------clock------------------------------------------- */
+.watch {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 8px solid #1f1f1f;
+    border-radius: 50%;
+    background-color: #111;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.3s ease;
+}
+
+.hand {
+position: absolute;
+transform-origin: bottom center;
+transform: translateX(-50%);
+transition: transform 0.5s cubic-bezier(0.4, 2.3, 0.4, 1);
+}
+
+.hour-hand {
+width: 8px;
+height: 50px;
+background-color: #f1c40f;
+top: 50%;
+left: 50%;
+z-index: 3;
+}
+
+.minute-hand {
+width: 6px;
+height: 65px;
+background-color: #3498db;
+top: 50%;
+left: 50%;
+z-index: 2;
+}
+
+.second-hand {
+width: 4px;
+height: 80px;
+background-color: #e74c3c;
+top: 50%;
+left: 50%;
+z-index: 1;
+}
+
+.center-circle {
+position: absolute;
+width: 12px;
+height: 12px;
+background-color: #fff;
+border-radius: 50%;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}

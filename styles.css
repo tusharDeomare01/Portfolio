@@ -1,0 +1,172 @@
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 4rem 0;
+    background: linear-gradient(to right, #3498db, #e74c3c);
+    padding: 5rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Dark Mode Style*/
+body.dark-mode {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: #2A2A2C;
+    line-height: 1.6;
+    border: hidden;
+}
+
+header.dark-mode {
+    background-color: white;
+    color: black;
+    text-align: center;
+    background: linear-gradient(to right, #3498db, #e74c3c);
+}
+
+.project.dark-mode {
+    background-color: #222;
+    border: hidden;
+}
+
+.projects.dark-mode{
+    background-color: #2A2A2C;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+
+
+/* Light Mode Style*/
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    background-color: white;
+    line-height: 1.6;   
+}
+
+.navbar {
+    background-color: #222;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.navbar ul li {
+    margin: 0 1rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #66ccff;
+}
+
+.section {
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.project {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.project h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.project p {
+    font-size: 1.2rem;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ... (previous styles) ... */
+
+/* Creative styling */
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.toggle-btn{
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#checkbox{
+    visibility: hidden;
+}
+
+.toggle-label{
+    width: 2.5rem;
+    height: 1.5rem;
+    background-color: grey;
+    display: inline-block;
+    position: relative;
+    border-radius: 10rem;
+}
+ 
+.toggle-ball{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+    top: .25rem;
+    left: .25rem;
+    transition: all .2s linear;
+}
+
+#checkbox:checked + .toggle-label .toggle-ball{
+    transform: translateX(1rem);
+    background-color: black;
+}
+
+.clock{
+    margin: 0 1rem;
+}
+
+
