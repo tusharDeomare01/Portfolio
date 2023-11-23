@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+
 header {
     background-color: #333;
     color: white;
@@ -169,4 +171,102 @@ body {
     margin: 0 1rem;
 }
 
+.portfolio_bgimage{
+    width: 90%;
+}
 
+/* media queries */
+
+@media (max-width:1200px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .home{
+        padding:1rem 4rem;
+    }
+
+}
+
+@media (max-width:991px){
+
+   header{
+       left:-120%;
+   }
+ 
+   #menu{
+       display: inline;
+   } 
+
+   header.toggle{
+    left:0%;
+   }
+
+   body{
+       padding:0;
+   }
+
+}
+
+@media (max-width:768px){
+
+    html{
+        font-size: 50%;
+    }
+ 
+ }
+
+@media (max-width:400px){
+
+    header{
+        width: 100vw;
+    }
+
+    .heading{
+        margin:0 3rem;
+    }
+
+    .about .row .counter .box{
+        width: 100%;
+    }
+ 
+    .education .box-container .box{
+        width:100%;
+    }
+
+    .portfolio .box-container .box{
+        width:100%;
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+
+    .contact .row form{
+        margin:3rem 0;
+    }
+    .portfolio .box-container .box h3 i{
+        top:15px;
+        left:122px;
+
+    }
+      .portfolio .box-container .box img{
+        top:15px;
+        left:122px;
+        
+    }
+      .portfolio .box-container .box a{
+        top:30px;
+        left:90px;
+        
+    }
+       .portfolio .box-container .box a h4{
+        top:10px;
+        left:26px;
+        
+    }
+    .contact .row form{
+        margin:3rem 0;
+    }
+
+
+ }
